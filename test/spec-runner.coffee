@@ -43,7 +43,7 @@ describe 'Klass', ->
 
       Person = Klass.extend
          setLanguage: (language) ->
-            @language = "A > #{language} "
+            @language = "A > #{language}"
 
       Animal = Person.extend
          setLanguage: (language) ->
