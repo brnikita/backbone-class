@@ -89,6 +89,11 @@ person.trigger('speak')
 
 ```
 
+More Info
+----------
+
+The API mirrors precisesly, but without the addition method backage that is normally associated with Models, Views and Collections; feel free to check out http://backbonejs.org/ for more info.  Also, see https://github.com/lukasolson/Backbone-Super for more info on the _super() method.
+
 
 Thanks
 -------
