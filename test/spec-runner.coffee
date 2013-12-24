@@ -11,17 +11,18 @@ describe 'Klass', ->
 
       Person = Klass.extend
          language: ->
-            'Space > '
+            'A > '
 
       Animal = Person.extend
          meaning: ->
-            'Structure'
+            'B'
+
 
       animal = new Animal()
 
       msg = animal.language() + animal.meaning()
 
-      expect(msg).to.equal 'Space > Structure'
+      expect(msg).to.equal 'A > B'
 
 
 
@@ -42,16 +43,33 @@ describe 'Klass', ->
 
       Person = Klass.extend
          setLanguage: (language) ->
-            @language = "Supernatural #{language}"
+            @language = "A > #{language} "
 
       Animal = Person.extend
          setLanguage: (language) ->
-            @_super("Space #{language}")
+            @_super("B > #{language}")
 
 
       animal = new Animal()
-      animal.setLanguage('Music')
+      animal.setLanguage('C')
 
-      expect(animal.language).to.equal 'Supernatural Space Music'
+      expect(animal.language).to.equal 'A > B > C'
+
+
+
+   it 'Should be overridable', ->
+
+      Person = Klass.extend
+         setLanguage: ->
+            @language = 'French'
+
+      Animal = Person.extend
+         setLanguage: ->
+            @langauage = 'German'
+
+
+      animal = new Animal()
+
+      expect(animal.setLanguage()).to.equal 'German'
 
 
