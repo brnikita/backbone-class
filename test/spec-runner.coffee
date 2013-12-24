@@ -1,7 +1,12 @@
-Klass  = require '../lib/Klass'
 _      = require 'underscore'
 chai   = require 'chai'
 expect = chai.expect
+
+
+Backbone = require 'backbone'
+_        = require 'underscore'
+
+Klass  = require '../src/backbone-simpleclass'
 
 
 describe 'Klass', ->

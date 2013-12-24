@@ -1,8 +1,16 @@
 {
-  "name": "backbone-class",
+  "name": "backbone-simpleclass",
   "version": "0.0.1",
   "description": "Bare-bones JavaScript Class inheritance via Backbone.extend and Backbone-super",
-  "main": "GruntFile.js",
+  "keywords": [
+    "backbone",
+    "class",
+    "super",
+    "simpleclass",
+    "backbone simpleclass",
+    "Backbone.Class"
+  ],
+  "main": "index.js",
   "scripts": {
     "test": "grunt test"
   },
@@ -17,11 +25,12 @@
     "grunt-contrib-coffee": "~0.7.0",
     "grunt-contrib-watch": "~0.5.2",
     "underscore": "~1.5.2",
-    "backbone": "~1.1.0"
+    "backbone": "~1.1.0",
+    "grunt-umd": "~1.6.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/damassi/backbone-class"
+    "url": "https://github.com/damassi/backbone-simpleclass"
   },
   "contributors": [
     {

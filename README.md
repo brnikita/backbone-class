@@ -1,11 +1,11 @@
-Klass
-=====
+Backbone SimpleClass
+====================
 
-JavaScript Class inheritence via the Backbone.extend pattern and modified via https://github.com/lukasolson/Backbone-Super for simple `this._super()` calls.  On instantiation, an initialize method is called and if a parameters object is passed, unless overridden, will be pushed on to an `options` hash.  Additionally, because Klass extends Backbone.Events, event dispatch can be achieved by adding listeners, triggering and removing listeners per the Backbone.js spec.
+SimpleClass is the missing "Backbone.Class" in the Backbone.js library.  It provides clean JavaScript Class inheritence via the Backbone.extend pattern and modified via https://github.com/lukasolson/Backbone-Super for simple `this._super()` calls.  On instantiation, an initialize method is called and if a parameters object is passed, unless overridden, it will be pushed on to an `options` hash.  Additionally, because backbone-class extends Backbone.Events, event dispatch can be achieved by adding listeners, triggering events, and removing listeners per the Backbone.js spec.
 
 Installation
 ------------
-- `npm install backbone-class`
+- `npm install backbone-simpleclass`
 
 Tests
 -----
@@ -21,9 +21,9 @@ Example
 **Inheritence**
 
 ```
-var Klass = require('backbone-class')
+var SimpleClass = require('backbone-simpleclass')
 
-var Person = Klass.extend({
+var Person = SimpleClass.extend({
   language: function() {
     return 'The method of human communication, either spoken or written, consisting of the use of words in a structured and conventional way.'
   }
@@ -48,7 +48,7 @@ console.log( animal.meaning() )
 **Supers**
 
 ```
-var Person = Klass.extend({
+var Person = SimpleClass.extend({
   language: function (lang) {
     return 'Speaking ' + (lang || 'English')
   }
@@ -72,7 +72,7 @@ console.log( animal.language('Bark') ) // 'Speaking Bark'
 **Eventing**
 
 ```
-var Person = Klass.extend({
+var Person = SimpleClass.extend({
   initialize: function() {
     this.on('speak', this.onSpeak.bind(this))
   },
@@ -86,3 +86,10 @@ var person = new Person()
 person.trigger('speak')
 
 ```
+
+
+Thanks
+-------
+
+http://backbonejs.org/
+https://github.com/lukasolson/Backbone-Super
