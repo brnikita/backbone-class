@@ -98,5 +98,5 @@ Class inheritance mirrors Backbone.js precisely, but without the addition method
 Thanks
 -------
 
-http://backbonejs.org/
-https://github.com/lukasolson/Backbone-Super
+- http://backbonejs.org/
+- https://github.com/lukasolson/Backbone-Super
