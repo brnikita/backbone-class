@@ -55,6 +55,7 @@ var animal = new Animal()
 
 console.log( animal.language('Bark') ) // 'Speaking Bark'
 
+```
 
 **Eventing**
 
