@@ -6,6 +6,7 @@ SimpleClass is the missing "Backbone.Class" in the Backbone.js library.  It prov
 Installation
 ------------
 - `npm install backbone-simpleclass`
+- Best used with https://github.com/substack/node-browserify
 
 Tests
 -----

@@ -29,20 +29,9 @@ module.exports = function( grunt ) {
     },
 
 
-    'umd': {
-      package: {
-        src: './src/backbone-simpleclass.js',
-        dest: './lib/backbone-simpleclass.js',
-        deps: {
-          'default': ['Backbone', '_']
-        }
-      }
-    },
-
-
     'watch': {
       src: {
-        files: [ 'src/**', 'test/**' ],
+        files: [ 'lib/**', 'test/**' ],
         tasks: [ 'simplemocha' ]
       }
     }
@@ -62,18 +51,11 @@ module.exports = function( grunt ) {
     'simplemocha'
   ])
 
-  grunt.registerTask( 'build', [
-    'test',
-    'umd'
-  ])
-
-
   // + ---------------------------------------
 
 
   grunt.loadNpmTasks( 'grunt-contrib-watch' )
   grunt.loadNpmTasks( 'grunt-simple-mocha' )
-  grunt.loadNpmTasks( 'grunt-umd' )
 
 
   // + ---------------------------------------

@@ -1,7 +1,7 @@
 {
   "name": "backbone-simpleclass",
-  "version": "0.0.1",
-  "description": "Bare-bones JavaScript Class inheritance via Backbone.extend and Backbone-super",
+  "version": "0.0.2",
+  "description": "SimpleClass is the missing 'Backbone.Class' in Backbone.js which provides clean JavaScript class inheritence via the Backbone.extend pattern",
   "keywords": [
     "backbone",
     "class",
@@ -25,8 +25,7 @@
     "grunt-contrib-coffee": "~0.7.0",
     "grunt-contrib-watch": "~0.5.2",
     "underscore": "~1.5.2",
-    "backbone": "~1.1.0",
-    "grunt-umd": "~1.6.1"
+    "backbone": "~1.1.0"
   },
   "repository": {
     "type": "git",
