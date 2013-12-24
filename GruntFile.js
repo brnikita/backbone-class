@@ -62,6 +62,11 @@ module.exports = function( grunt ) {
     'simplemocha'
   ])
 
+  grunt.registerTask( 'build', [
+    'test',
+    'umd'
+  ])
+
 
   // + ---------------------------------------
 
