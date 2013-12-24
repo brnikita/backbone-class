@@ -74,3 +74,10 @@ var person = new Person()
 person.trigger('speak')
 
 ```
+
+Tests
+-----
+
+- `npm install -g grunt-cli`
+- `npm install`
+- `npm test`

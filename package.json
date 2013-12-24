@@ -1,10 +1,10 @@
 {
-  "name": "grunt-tests",
+  "name": "backbone-class",
   "version": "0.0.1",
-  "description": "Grunt scaffold for writing mocha tests",
+  "description": "Bare-bones JavaScript Class inheritance via Backbone.extend and Backbone-super",
   "main": "GruntFile.js",
   "scripts": {
-    "start": "grunt"
+    "test": "grunt test"
   },
   "dependencies": {
     "grunt": "~0.4.0"
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/damassi/grunt-tests"
+    "url": "https://github.com/damassi/backbone-class"
   },
   "contributors": [
     {
