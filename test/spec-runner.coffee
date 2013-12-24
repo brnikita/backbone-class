@@ -1,4 +1,4 @@
-Klass  = require '../lib/backbone-simpleclass'
+Klass  = require '../lib/backbone-class'
 _      = require 'underscore'
 chai   = require 'chai'
 expect = chai.expect
