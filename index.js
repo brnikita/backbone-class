@@ -1,1 +1,1 @@
-module.exports = require('./lib/backbone-simpleclass')
+module.exports = require('./lib/backbone-class')

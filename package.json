@@ -1,13 +1,12 @@
 {
   "name": "backbone-class",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Backbone Class is the missing 'Backbone.Class' in Backbone.js which provides clean JavaScript class inheritence via the Backbone.extend pattern",
   "keywords": [
     "backbone",
     "class",
-    "super",
     "simple",
-    "simpleclass",
+    "inheritence",
     "backbone-class",
     "Backbone.Class"
   ],
@@ -16,7 +15,9 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "grunt": "~0.4.0"
+    "grunt": "~0.4.0",
+    "underscore": "~1.5.2",
+    "backbone": "~1.1.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -24,9 +25,7 @@
     "chai": "~1.7.2",
     "grunt-simple-mocha": "~0.4.0",
     "grunt-contrib-coffee": "~0.7.0",
-    "grunt-contrib-watch": "~0.5.2",
-    "underscore": "~1.5.2",
-    "backbone": "~1.1.0"
+    "grunt-contrib-watch": "~0.5.2"
   },
   "repository": {
     "type": "git",
